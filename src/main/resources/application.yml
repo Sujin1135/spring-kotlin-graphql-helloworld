@@ -1,0 +1,10 @@
+graphql:
+  packages:
+    - "com.example.helloworld"
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          -debug
