@@ -16,5 +16,7 @@ class WidgetQuery : Query {
 
 @Component
 class WidgetMutation : Mutation {
-    fun updateWidget(id: ID, value: String): Widget = Widget(id, value)
+    fun updateWidget(id: ID, value: String): Widget {
+        return Widget(id, "test value as {}".replace("{}", value))
+    }
 }
