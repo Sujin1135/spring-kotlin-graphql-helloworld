@@ -32,6 +32,8 @@ dependencies {
     implementation("com.expediagroup", "graphql-kotlin-schema-generator", "6.0.0-alpha.2")
     implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
     implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
+    implementation("org.springframework.boot", "spring-boot-starter-data-mongodb-reactive")
+    implementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
     runtimeOnly("org.postgresql:postgresql")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
