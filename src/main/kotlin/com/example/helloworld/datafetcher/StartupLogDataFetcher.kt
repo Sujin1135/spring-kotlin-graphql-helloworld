@@ -1,7 +1,6 @@
 package com.example.helloworld.datafetcher
 
 import com.example.helloworld.entity.Student
-import com.example.helloworld.repository.StartupLogRepository
 import com.example.helloworld.repository.StudentRepository
 import com.netflix.graphql.dgs.DgsComponent
 import com.netflix.graphql.dgs.DgsQuery
