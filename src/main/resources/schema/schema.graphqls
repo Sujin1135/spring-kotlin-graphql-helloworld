@@ -1,0 +1,21 @@
+type Query {
+    shows: [Show]
+    students: [Student]
+}
+
+type StartupLog {
+    id: String,
+    hostname: String,
+    pid: Int,
+}
+
+type Show {
+    title: String
+    releaseYear: Int
+}
+
+type Student {
+    id: String,
+    city: String,
+    fname: String,
+}
