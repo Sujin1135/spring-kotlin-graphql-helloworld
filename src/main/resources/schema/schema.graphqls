@@ -13,4 +13,15 @@ type StartupLog {
     id: String,
     hostname: String,
     pid: String,
+    buildInfo: BuildInfo,
+}
+
+type BuildInfo {
+    debug: Boolean,
+    gitVersion: String,
+    javascriptEngine: String,
+    maxBsonObjectSize: Int,
+    sysInfo: String,
+    version: String,
+    versionArray: [String],
 }
