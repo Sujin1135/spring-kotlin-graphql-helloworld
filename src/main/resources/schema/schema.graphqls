@@ -13,6 +13,7 @@ type StartupLog {
     id: String,
     hostname: String,
     pid: String,
+    startTime: String,
     buildInfo: BuildInfo,
 }
 
