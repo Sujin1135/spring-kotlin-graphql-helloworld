@@ -1,7 +1,6 @@
 package com.example.helloworld.datafetcher
 
 import com.example.helloworld.config.MongoConfig
-import com.example.helloworld.entity.Student
 import com.example.helloworld.repository.StudentRepository
 import com.netflix.graphql.dgs.DgsQueryExecutor
 import com.netflix.graphql.dgs.autoconfig.DgsAutoConfiguration
