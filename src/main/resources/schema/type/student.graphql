@@ -2,4 +2,19 @@ type Student {
     id: String,
     city: String,
     fname: String,
+    meta: Meta!,
+}
+
+type Meta {
+    name: String
+}
+
+input StudentInput {
+    city: String,
+    fname: String,
+    meta: MetaInput,
+}
+
+input MetaInput {
+    name: String
 }

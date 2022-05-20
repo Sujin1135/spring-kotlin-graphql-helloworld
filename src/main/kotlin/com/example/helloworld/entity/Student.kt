@@ -8,7 +8,11 @@ import org.springframework.data.mongodb.core.mapping.Field
 data class Student (
     @Id
     @Field("_id")
-    val id: String,
+    val id: String?,
     val city: String,
     val fname: String,
+    @Field("meta")
+    val meta: Meta?,
 )
+
+data class Meta (val name: String)

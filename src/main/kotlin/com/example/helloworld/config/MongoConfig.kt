@@ -1,6 +1,6 @@
 package com.example.helloworld.config
 
-import com.example.helloworld.repository.StartupLogRepository
+import com.example.helloworld.repository.StudentRepository
 import com.mongodb.reactivestreams.client.MongoClients
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 
 @Configuration
 @EnableReactiveMongoRepositories(
-    basePackageClasses = arrayOf(StartupLogRepository::class)
+    basePackageClasses = arrayOf(StudentRepository::class)
 )
 class MongoConfig : AbstractReactiveMongoConfiguration() {
     override fun getDatabaseName() = "local"
