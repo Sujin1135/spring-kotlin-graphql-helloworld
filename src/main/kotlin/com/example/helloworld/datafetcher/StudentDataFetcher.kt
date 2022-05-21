@@ -16,8 +16,18 @@ class StudentDataFetcher {
     lateinit var repository: StudentRepository
 
     @DgsQuery
-    fun students(@InputArgument titleFilter: String?): Flux<Student> {
+    fun students(): Flux<Student> {
         return repository.findAll()
+    }
+
+    @DgsQuery
+    fun studentsByCity(@InputArgument city: String): Flux<Student> {
+        return repository.findByCity(city)
+    }
+
+    @DgsQuery
+    fun student(@InputArgument id: String): Mono<Student> {
+        return repository.findById(id)
     }
 
     @DgsMutation

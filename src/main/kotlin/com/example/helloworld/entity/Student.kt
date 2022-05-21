@@ -1,5 +1,6 @@
 package com.example.helloworld.entity
 
+import org.bson.types.ObjectId
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
@@ -8,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Field
 data class Student (
     @Id
     @Field("_id")
-    val id: String?,
+    val id: ObjectId?,
     val city: String,
     val fname: String,
     @Field("meta")
