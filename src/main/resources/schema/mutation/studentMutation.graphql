@@ -1,3 +1,4 @@
 type Mutation {
     addStudent(studentInput: StudentInput): Student
+    deleteStudent(id: String): Boolean
 }

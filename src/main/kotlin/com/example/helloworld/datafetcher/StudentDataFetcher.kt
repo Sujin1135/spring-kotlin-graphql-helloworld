@@ -21,7 +21,13 @@ class StudentDataFetcher {
     }
 
     @DgsMutation
-    fun addStudent(@InputArgument("studentInput") studentInput: Student): Mono<Student> {
+    fun addStudent(@InputArgument studentInput: Student): Mono<Student> {
         return repository.insert(studentInput)
+    }
+
+    @DgsMutation
+    fun deleteStudent(@InputArgument id: String): Mono<Boolean> {
+        val student = repository.findById(id).toFuture().get()
+        return repository.delete(student).thenReturn(true)
     }
 }
