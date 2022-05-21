@@ -1,5 +1,5 @@
 type Query {
-    students: [Student]
-    studentsByCity(city: String): [Student]
+    students(pagination: Pagination!): [Student]
+    studentsByCity(city: String!): [Student]
     student(id: String): Student
 }

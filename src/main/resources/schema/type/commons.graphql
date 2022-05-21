@@ -1,0 +1,4 @@
+input Pagination {
+    page: Int! = 1,
+    size: Int! = 5,
+}
