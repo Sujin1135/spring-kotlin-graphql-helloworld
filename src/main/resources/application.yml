@@ -8,3 +8,7 @@ logging:
       springframework:
         web:
           -debug
+        data:
+          mongodb:
+            core:
+              ReactiveMongoTemplate: DEBUG
